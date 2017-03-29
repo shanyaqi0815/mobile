@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script>
+    </script>
+    <style>
+        *{margin: 0;padding:0;}
+        ul,ol,li{list-style: none}
+        a{text-decoration: none}
+        ul li{; margin: 50px 0 0 50px;width: 750px;height: 180px;border-radius: 50px;position: absolute;box-shadow: 0 10px 50px rgba(0,0,0,0.5);transition: all .8s;}
+        ul li:hover{transform: scale(1.8);z-index: 10;}
+        .jianli{width: 1140px;margin: auto;border: 1px solid #00FFFF ;height:1200px;position: relative;background:#000 url(img/15143.jpg) no-repeat 0 1px/ cover;}
+        .jianli li:nth-child(1){z-index: 10;background-image: url(img/4386803_151437592614_2.jpg);display:flex;justify-content: center;align-items: center;top: 0px;left:0px;}
+        .jianli li:nth-child(1) a{font-size: 60px;padding: 30px;}
+        .jianli li:nth-child(1) span{font-size: 100px;color: #FFFFFF}
+
+        .jianli li:nth-child(2){background:url(img/1414.jpg) no-repeat 0 -236px/ cover;top: 150px;left:280px;z-index: 9}
+        .jianli li:nth-child(2) .geren{font-size: 30px;color: #FFFFFF;padding:10px 30px 0 0;display:flex;justify-content:flex-end;}
+        .jianli li:nth-child(2) .text{width: 500px;height: 125px;}
+        .jianli li:nth-child(2) .left{float: left;width: 250px;height: auto;}
+        .jianli li:nth-child(2) .right{float:right;width: 200px;height: auto;}
+        .jianli li:nth-child(2) span{padding: 0px 10px 0 10px;display: block;color: #0f0f0f;}
+        .jianli li:nth-child(2) span p{display: inline-block;color: #000000;font-weight: bold;}
+
+
+        .jianli li:nth-child(3){background:url(img/521.jpg) no-repeat 0 -16px/ cover;top:307px;left:0px;z-index: 8}
+        .jianli li:nth-child(3) .text{font-size: 30px;color: #FFFFFF;padding:20px 0px 0 30px;}
+        .jianli li:nth-child(3) span{ font-size: 18px;padding: 2px 10px 0 150px;display: block;color:#0f0f0f;}
+        .jianli li:nth-child(3) span p{display: inline-block;color:#000000;font-weight: bold;}
+
+        .jianli li:nth-child(4){background:url(img/14153.jpg) no-repeat 0 -16px/ cover;top:464px;left:280px;z-index: 7}
+        .jianli li:nth-child(4) .text{font-size: 30px;color: #FFFFFF;padding:20px 0px 0 30px;display:flex;justify-content:flex-end;}
+        .jianli li:nth-child(4) span{ font-size: 18px;padding: 2px 10px 0 150px;display: block;color:#0f0f0f;}
+        .jianli li:nth-child(4) span p{display: inline-block;color:#000000;font-weight: bold;}
+
+        .jianli li:nth-child(5){background:url(img/0912.jpg) no-repeat 0 -228px/ cover;top:620px;left:0px;z-index: 6}
+        .jianli li:nth-child(5) .text{font-size: 30px;color: #FFFFFF;padding:20px 0px 0 30px;}
+        .jianli li:nth-child(5) span{font-size: 20px;color:red;padding:20px 0px 0 30px;}
+        .jianli li:nth-child(5) p{padding:0 15px;color: #000000}
+
+        .jianli li:nth-child(6){background:url(img/1714.jpg) no-repeat 0 -280px/ cover;;top:775px;left:280px;z-index: 5}
+        .jianli li:nth-child(6) .text{font-size: 30px;color: #FFFFFF;padding:20px 0px 0 30px;display:flex;justify-content:flex-end;}
+        .jianli li:nth-child(6) span{ font-size: 18px;padding: 2px 10px 0 150px;display: block;color:#0f0f0f;}
+        .jianli li:nth-child(6) span p{display: inline-block;color:#000000;font-weight: bold; font-size: 18px}
+
+        .jianli li:nth-child(7){background:url(img/018.jpg) no-repeat 0 -284px/ cover;top:930px;left:0px;z-index: 4;}
+        .jianli li:nth-child(7) .text{font-size: 30px;color: #FFFFFF;padding:20px 0px 0 30px;}
+        .jianli li:nth-child(7) p{padding:10px 15px;color: #000000;font-weight: bold}
+    </style>
+</head>
+<body>
+
+        <ul class="jianli">
+            <li><a href="#">单亚奇</a><span>简历</span></li>
+            <li><a href="#">
+                <div class="geren">个人信息：</div>
+                <div class="text">
+                    <div class="left">
+                        <span>姓名：<p>单亚奇</p></span>
+                        <span>年龄：<p>22</p></span>
+                        <span>性别：<p>男</p></span>
+                        <span>籍贯：<p>河南省周口市扶沟县</p></span>
+                        <span>邮箱：<p>1553859055@qq.com</p></span>
+                    </div>
+                    <div class="right">
+                        <span>学校：<p>郑州职业技术学院</p></span>
+                        <span>学历：<p>大专</p></span>
+                        <span>专业：<p>计算机网络技术</p></span>
+                        <span>职务：<p>团员</p></span>
+                        <span>电话：<p>17317352262</p></span>
+                    </div>
+
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="wangzhe">
+                    <div class="text">联系方式：</div>
+                    <span>QQ1：<p>1553859055</p></span>
+
+                    <span>微信：<p>shan1553859055</p></span>
+                    <span>邮箱：<p>1553859055@qq.com</p></span>
+                    <span>电话：<p>17317352262</p></span>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="text">教育背景：</div>
+                <div class="cen">
+                    <span>学校：<p>郑州职业技术学院</p></span>
+                    <span>系别：<p>软件工程系</p></span>
+                    <span>专业：<p>计算机网络技术</p></span>
+                    
+                    <span>入学--毕业：<p>2014年9月--2017年6月</p></span>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="text">技能水平：</div>
+                <p>1.熟悉：<span>Ps</span>，<span>Dreamweaver</span>等主流工具，具备一定的平面设计能力<br>
+                   2.熟悉<span>html,css,jquery，js,</span>等网页脚本语言，可以使用<span>DIV+CSS</span>快速的排版布局，精准的切割，并制作常用的pc和手机页面展示效果<br>
+                    3.有良好的审美能力与设计能力，
+                </p>
+            </a></li>
+            <li><a href="#">
+                <div class="text">工作宗旨：</div>
+                <span>追求：<p>尽善尽美，客户满意</p></span>
+                <span>宗旨：<p>实现客户利益最大化</p></span>
+                <span>信条：<p>以人为本，诚心至上</p></span>
+                <span>态度：<p>专心，用心，尽心，尽力</p></span>
+            </a></li>
+            <li><a href="#">
+                <div class="text">自我评价：</div>
+                <p>忠实诚信,讲原则，说到做到，决不推卸责任;有自制力，做事情始终坚持有始有终，从不半途而废;肯学习,有问题不逃避,愿意虚心向他人学习;自信但不自负,不以自我为中心;愿意以谦虚态度赞扬接纳优越者,权威者;会用100%的热情和精力投入到工作中;平易近人。为人诚恳,性格开朗,积极进取,适应力强、勤奋好学、脚踏实地，有较强的团队精神,工作积极进取,态度认真。</p>
+            </a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+
+        </ul>
+
+</body>
+</html>
